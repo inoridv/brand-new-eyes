@@ -1,0 +1,49 @@
+{
+    "name": "EgressBlobToDataLakePipeline",
+    "properties": {
+        "description": "Egress data from blob to azure data lake",
+        "activities": [
+            {
+                "type": "Copy",
+                "typeProperties": {
+                    "source": {
+                        "type": "BlobSource",
+                        "treatEmptyAsNull": true
+                    },
+                    "sink": {
+                        "type": "AzureDataLakeStoreSink",
+                        "writeBatchSize": 0,
+                        "writeBatchTimeout": "00:00:00"
+                    }
+                },
+                "inputs": [
+                    {
+                        "name": "AzureBlobDatasetTemplate"
+                    }
+                ],
+                "outputs": [
+                    {
+                        "name": "AzureDataLakeStoreDatasetTemplate1"
+                    }
+                ],
+                "policy": {
+                    "timeout": "10:00:00",
+                    "concurrency": 1,
+                    "executionPriorityOrder": "NewestFirst",
+                    "retry": 1
+                },
+                "scheduler": {
+                    "frequency": "Minute",
+                    "interval": 15
+                },
+                "name": "EgressDataLake",
+                "description": "Move data from blob to azure data lake"
+            }
+        ],
+        "start": "2015-08-08T00:00:00Z",
+        "end": "2017-11-01T01:00:00Z",
+        "isPaused": false,
+        "hubName": "datapipelineetl_hub",
+        "pipelineMode": "Scheduled"
+    }
+}

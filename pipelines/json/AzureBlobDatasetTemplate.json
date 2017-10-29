@@ -1,0 +1,28 @@
+{
+    "name": "AzureBlobDatasetTemplate",
+    "properties": {
+        "published": false,
+        "type": "AzureBlob",
+        "linkedServiceName": "AzureStorageLinkedService",
+        "typeProperties": {
+            "fileName": "dados_aluno.csv",
+            "folderPath": "rawdatasample/",
+            "format": {
+                "type": "TextFormat",
+                "rowDelimiter": "\n",
+                "columnDelimiter": ","
+            }
+        },
+        "availability": {
+            "frequency": "Day",
+            "interval": 1,
+            "style": "StartOfInterval"
+        },
+        "external": true,
+        "policy": {
+            "validation": {
+                "minimumSizeMB": 0.00001
+            }
+        }
+    }
+}
