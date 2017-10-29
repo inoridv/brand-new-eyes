@@ -1,0 +1,21 @@
+{
+    "name": "AzureDataLakeStoreDatasetTemplate1",
+    "properties": {
+        "published": false,
+        "type": "AzureDataLakeStore",
+        "linkedServiceName": "AzureDataLakeStoreLinkedService",
+        "typeProperties": {
+            "fileName": "dados_aluno.csv",
+            "folderPath": "datalake/",
+            "format": {
+                "type": "TextFormat",
+                "rowDelimiter": "\n",
+                "columnDelimiter": ","
+            }
+        },
+        "availability": {
+            "frequency": "Minute",
+            "interval": 15
+        }
+    }
+}
