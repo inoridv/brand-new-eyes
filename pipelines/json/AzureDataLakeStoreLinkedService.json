@@ -1,0 +1,15 @@
+{
+    "name": "AzureDataLakeStoreLinkedService",
+    "properties": {
+        "description": "",
+        "hubName": "datapipelineetl_hub",
+        "type": "AzureDataLakeStore",
+        "typeProperties": {
+            "dataLakeStoreUri": "adl://transparency.azuredatalakestore.net/",
+            "authorization": "**********",
+            "sessionId": "**********",
+            "subscriptionId": "9ef08cc8-4b01-4a16-9297-487273c5e828",
+            "resourceGroupName": "transparency"
+        }
+    }
+}
