@@ -1,29 +1,37 @@
-<!DOCTYPE html>
+<!DOCTYPE html/>
+<!--Index of the WebApp for Brand New Eyes Visualization-->
 <html>
+
   <head>
     <meta charset="utf-8">
     <title>Hack the Campus</title>
     <link rel="stylesheet" href="css/index.css">
   </head>
+
   <body>
+    <!--We are using the unicamp map as background below-->
     <img id="fundo" src="unicamp.png" usemap="#fund">
+
     <map id="fund_map" name="fund">
         <area shape="poly" name="IC" coords="434,90, 453,83, 448,71, 448,60, 426,69, 425,77" href="#" onclick="alteradivs(1)" onmouseover="criadiv($(this))" onmouseout="$('#conteudo').css('display','none')">
         <area shape="poly" name="IC" coords="420,139, 415,132, 419,129, 413,119, 379,132, 388,154" href="#" onclick="alteradivs(1)" onmouseover="criadiv($(this))" onmouseout="$('#conteudo').css('display','none')">
-
     </map>
-    <div id="conteudo">
+    <!--Div for display content when you choose an institute-->
+    <div id="content">
       Clique no instituto para mais informações
     </div>
-    <div id="dados"></div>
+    <div id="data"></div>
     <div id="piechart0"></div>
     <div id="piechart1"></div>
     <div id="piechart2"></div>
     <div id="columnchart"></div>
     <div id="chart"></div>
+
   </body>
+
   <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
   <script type="text/javascript" src="js/jquery.imagemapster.min.js"></script>
   <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
-<script type="text/javascript" src="js/index.js"></script>
+  <script type="text/javascript" src="js/index.js"></script>
+
 </html>
