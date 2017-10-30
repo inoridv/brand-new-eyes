@@ -1,40 +1,50 @@
-#fundo{
+/* CSS of the WebApp */
+/* All the piechart<x> field are for the charts using google charts application */
+
+#fundo {
   width:100%;
 }
-body{
+
+body {
   margin:0;
 }
-#piechart0{
+
+//
+#piechart0 {
   display:none;
   position:fixed;
   left:75%;
   top:70%;
 }
-#piechart1{
+
+#piechart1 {
   display:none;
   position:fixed;
   left:2%;
   top:70%;
 }
-#piechart2{
+
+#piechart2 {
   display:none;
   position:fixed;
   left:39%;
   top:70%;
 }
-#chart{
+
+#chart {
   display:none;
   position:fixed;
   top:70%;
   width: 100%;
 }
-#columnchart{
+#columnchart {
   display:none;
   position:fixed;
   left:75%;
   top:5%;
 }
-#dados{
+
+#data {
 border: 1px solid dark-grey;
 padding-left: 10px;
 padding-top: 10px;
@@ -48,9 +58,9 @@ left:2%;
 top:5%;
 font-size: 20px;
 font-weight: bold;
-
 }
-#conteudo{
+
+#content {
   padding-left: 5px;
   border-radius: 20px;
   border: 3px solid black;
