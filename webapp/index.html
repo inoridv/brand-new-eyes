@@ -3,9 +3,23 @@
   <head>
     <meta charset="utf-8">
     <title>Hack the Campus</title>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="css/index.css">
   </head>
   <body>
+
+    <!--Navbar-->
+       <nav class="navbar navbar-default navbar-fixed-top">
+           <div class="collapse navbar-collapse" id="menu">
+               <ul class="nav navbar-nav navbar-right">
+                   <li class="ativo"><a href="index.html">INICIO</a>
+                   <li><a href="">SOBRE</a>
+                   <li><a href="">CATÁLOGO</a>
+               </ul>
+           </div>
+       </nav>
+
     <img id="fundo" src="unicamp.png" usemap="#fund">
     <map id="fund_map" name="fund">
         <area shape="poly" name="IC" coords="434,90, 453,83, 448,71, 448,60, 426,69, 425,77" href="#" onclick="alteradivs(1)" onmouseover="criadiv($(this))" onmouseout="$('#conteudo').css('display','none')">

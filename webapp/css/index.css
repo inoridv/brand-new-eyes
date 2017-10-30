@@ -1,8 +1,29 @@
+body{
+  padding-top: 70px;
+  margin:0;
+}
+.navbar{ /*Configurações da navbar*/
+  background-color: #DD3D40;
+  border-bottom-width: 0px
+}
+.nav{ /*Configuração das opções dentro da navbar*/
+  margin-right: 2em;
+}
+.navbar-nav > li > a:hover:not(.active) { /*Configurações de quando passar o mouse em cima das opções da navbar*/
+  color: black !important;
+}
+.navbar-nav > li > a { /*Tamanho navbar*/
+  padding-top:27px;
+  height: 70px;
+}
+.ativo a { /*Configuração da opção da navbar que ficará ativa*/
+  color: black !important;
+}
+#menu a { /*Cor das letras da navbar*/
+  color: white;
+}
 #fundo{
   width:100%;
-}
-body{
-  margin:0;
 }
 #piechart0{
   display:none;
@@ -48,7 +69,7 @@ left:2%;
 top:5%;
 font-size: 20px;
 font-weight: bold;
-
+margin-top: 80px;
 }
 #conteudo{
   padding-left: 5px;
