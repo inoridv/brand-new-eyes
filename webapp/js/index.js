@@ -1,6 +1,6 @@
 google.charts.load("current", {packages:["corechart"]});
 
-$('#fundo').on('click',function(){
+$('#fundo').on('click',function(){  //Função que esconde os gráficos ao clicar em outro lugar do mapa
   alteradivs(0);
 })
 
@@ -14,9 +14,9 @@ $.get(backendUrl, function(data) {
   ic = data.data;
 });
 
-var total = [976931617,23456];
+var total = [976931617,23456];  //Dados totais dos intitutos para realizar comparações de porcentagem
 
-    image.mapster({
+    image.mapster({ //Define o que acontece ao passar o mouse e clicar em áreas mapeadas na imagem
         fillOpacity: 0.4,
         fillColor: "eae0de",
         stroke: true,
@@ -28,7 +28,7 @@ var total = [976931617,23456];
         listKey: 'name',
       });
 
-function criadiv($i){
+function criadiv($i){ //Função chamada no momento em que serão criados os gráficos, coloca cada informação no lugar certo
   drawChart($i,ic);
   var gastoaluno = ((ic[0]-ic[6])/ic[1]);
   $('#dados').html('Área construída: '+ic[5]+' m² <br>Custo de manutenção predial: R$ '+ic[6]+'<br> Custo por aluno por ano: R$ '+gastoaluno.toFixed(2)+'<br> Salário bruto médio dos professores: R$ 13.559,30');
@@ -36,14 +36,14 @@ function criadiv($i){
   $('#conteudo').html('<b>'+$i.attr('name')+'</b><br>Clique no instituto para mais informações');
 }
 
-$(document).bind('mousemove', function(e){
+$(document).bind('mousemove', function(e){  //Faz com que a div "Clique aqui para mais informações" siga o mouse nos momentos em que está sendo exibida
     $('#conteudo').css({
        left:  e.pageX + 20,
        top:   e.pageY
     });
 });
 
-function alteradivs(i){
+function alteradivs(i){ //Responsável por esconder e exibir os gráficos
   if(i){
     $('#dados').fadeIn(500);
     $('#piechart0').fadeIn(500);
@@ -61,7 +61,7 @@ function alteradivs(i){
   }
 }
 
-function drawChart($nome,dados) {
+function drawChart($nome,dados) { //Função que desenha todos os gráficos e os coloca nas divs para serem exibidos
         var data0 = google.visualization.arrayToDataTable([
           ['Instituto', 'Reais'],
           [$nome.attr('name'), dados[0]],
