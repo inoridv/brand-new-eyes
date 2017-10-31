@@ -28,20 +28,20 @@ body{
 #piechart0{
   display:none;
   position:fixed;
-  left:69.8%;
-  top:69.5%;
+  left:75%;
+  top:70%;
 }
 #piechart1{
   display:none;
   position:fixed;
-  left:0.5%;
-  top:69.5%;
+  left:2%;
+  top:70%;
 }
 #piechart2{
   display:none;
   position:fixed;
-  left:35.5%;
-  top:69.5%;
+  left:39%;
+  top:70%;
 }
 #chart{
   display:none;
@@ -52,30 +52,31 @@ body{
 #columnchart{
   display:none;
   position:fixed;
-  right: 0.5%;
-  top:11%;
+  left:75%;
+  top:5%;
 }
 #dados{
-  border: 1px solid dark-grey;
-  padding-left: 10px;
-  padding-top: 10px;
-  background-color: #fff;
-  opacity: 0.8;
-  width:455px;
-  height:155px;
-  display:none;
-  position:fixed;
-  left:0.5%;
-  top:11%;
-  font-size: 20px;
-  font-weight: bold;
+border: 1px solid dark-grey;
+padding-left: 10px;
+padding-top: 10px;
+background-color: #fff;
+opacity: 0.8;
+width:455px;
+height:105px;
+display:none;
+position:fixed;
+left:2%;
+top:5%;
+font-size: 20px;
+font-weight: bold;
+margin-top: 80px;
 }
 #conteudo{
   padding-left: 5px;
   border-radius: 20px;
   border: 3px solid black;
   width:300px;
-  height:180px;
+  height:100px;
   display:none;
   position: absolute;
   float: left;
