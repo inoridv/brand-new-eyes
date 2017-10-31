@@ -1,16 +1,16 @@
-body{ 
+body{ /* Garantindo que o header não sobreponha o conteúdo da página */
   padding-top: 70px;
   margin:0;
 }
-.container{
+.container{ /* Configuração da parte principal da página about */
   margin-top:10px;
   background-color:#003333;
   color:white;
 }
-legend{
+legend{ /* Deixando em cor branca os títulos na pagina about */
   color:white;
 }
-#github{
+#github{  /* Configuração do link do github */
   height:30px;
 }
 .navbar{ /*Configurações da navbar*/
