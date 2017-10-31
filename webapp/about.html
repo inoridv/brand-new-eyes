@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Sobre</title>
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/index.css">
+  <link rel='shortcut icon' type='image/x-icon' href='favicon.ico' />
+</head>
+  <body style="background-color:#003333">
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="collapse navbar-collapse" id="menu">
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="index.html">INICIO</a>
+                <li class="ativo"><a href="about.html">SOBRE</a>
+                <li><a href="">CATÁLOGO</a>
+            </ul>
+        </div>
+    </nav>
+    <div class="container">
+      <fieldset>
+        <legend>Overview</legend>
+        The project is focused on centralizing data from Unicamp transparency project by using a Data Lake, creating new possibilities for data mining, manipulating, analysis and visualization. From that centralized data source we created an interactive Unicamp map that uses that info to produce charts and reports in an institute basis.
+      </fieldset>
+      <fieldset>
+          <legend>Purpose</legend>
+        Our purpose is to host Unicamp's data that should be public in the cloud. We built a data lake architecture, which begins with some ETL processes to gather the data from Unicamp's on-premise sources via scheduled pipelines and move it to Microsoft Azure. From there we have an HDFS prepared for both large-scale data processing or simple data/file gathering. From that, we also enable analytics services and move the data to other services that provide more flexibility in the data analysis. Using that data sink, we consume everything to create an interactive map that relates the data to the university's institutes and provides some default reports, while also integrating with BI tools to provide extremely customizable reports that can give every user the needed independence while looking up the data.
+      </fieldset>
+    </div>
+  </body>
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+  <script type="text/javascript" src="js/bootstrap.min.js"></script>
+</html>
