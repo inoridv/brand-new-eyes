@@ -1,4 +1,4 @@
-body{
+body{ 
   padding-top: 70px;
   margin:0;
 }
@@ -33,22 +33,22 @@ legend{
 #menu a { /*Cor das letras da navbar*/
   color: white;
 }
-#fundo{
+#fundo{ /*Configuração da imagem de fundo*/
   width:100%;
 }
-#piechart0{
+#piechart0{  /*Configuração do gráfico inferior a direita*/
   display:none;
   position:fixed;
   left:75%;
   top:70%;
 }
-#piechart1{
+#piechart1{ /*Configuração do gráfico inferior a esquerda*/
   display:none;
   position:fixed;
   left:2%;
   top:70%;
 }
-#piechart2{
+#piechart2{ /*Configuração do gráfico inferior central*/
   display:none;
   position:fixed;
   left:39%;
@@ -60,13 +60,13 @@ legend{
   top:70%;
   width: 100%;
 }
-#columnchart{
+#columnchart{ /*Configuração do gráfico superior a direita*/
   display:none;
   position:fixed;
   left:75%;
   top:5%;
 }
-#dados{
+#dados{ /*Configuração da caixa de informações*/
 border: 1px solid dark-grey;
 padding-left: 10px;
 padding-top: 10px;
@@ -82,7 +82,7 @@ font-size: 20px;
 font-weight: bold;
 margin-top: 80px;
 }
-#conteudo{
+#conteudo{ /*Configuração da mensagem do cursor*/
   padding-left: 5px;
   border-radius: 20px;
   border: 3px solid black;
