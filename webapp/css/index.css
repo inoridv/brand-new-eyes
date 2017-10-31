@@ -2,6 +2,17 @@ body{
   padding-top: 70px;
   margin:0;
 }
+.container{
+  margin-top:10px;
+  background-color:#003333;
+  color:white;
+}
+legend{
+  color:white;
+}
+#github{
+  height:30px;
+}
 .navbar{ /*Configurações da navbar*/
   background-color: #DD3D40;
   border-bottom-width: 0px
